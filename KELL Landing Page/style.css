@@ -1,0 +1,188 @@
+@keyframes fadeIn {
+  0%{opacity:0}
+  30%{opacity:0}
+  100%{opacity:1}
+}
+
+@-webkit-keyframes fadeIn {
+  0%{opacity:0}
+  30%{opacity:0}
+  100%{opacity:1}
+}
+
+@keyframes slideIn {
+  0%{
+      transform: translateX(200%);
+  }
+  60%{
+      transform: translateX(200%);
+    }
+  100% {
+    transform: translateX(68%);
+  }
+}
+
+body {
+  background: #231f20;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+    
+}
+
+.fadeIn {
+  animation:2s ease 0s normal forwards 1 fadeIn;
+  -webkit-animation:2s ease 0s normal forwards 1 fadeIn;
+  opacity:1
+}
+
+.slideIn {
+  animation:2s ease 0s normal forwards 1 slideIn;
+  -webkit-animation:2s ease 0s normal forwards 1 slideIn;
+}
+
+
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.shadow_box {
+  background: #231f20;
+  position: relative;
+  width: 80vw;
+  top: 50%;
+  height: 85vh;
+  transform: translate3d( 30%, -50%, 0);
+  -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.5);
+  z-index: 5;
+}
+
+.content_wrapper {
+  background: #e0e0e0;
+  z-index: 5;
+  position: relative;
+  top: 50%;
+  transform: translate3d( -10%, -50%, 0);
+  height: 85%;
+  width: 110%;
+}
+
+.content_box:before {
+  content: '';
+  position: absolute;
+  height: 70%;
+  left: 0;
+  bottom: 0;
+  width: 15px;
+  background: #da9f59;
+}
+
+.content_box {
+  text-align: center;
+  z-index: 2;
+  width: 40%;
+  position: relative;
+  height: 100%;
+  background: #e0e0e0;
+}
+
+.text_wrapper {
+  position: relative;
+  width 100%;
+  top: 50%;
+  transform: translate3d( 0, -50%, 0);
+}
+
+.content_box .address {
+  color: #d9af59;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Heebo', Sans-Serif;
+  font-weight: 800;
+}
+
+.content_box .main_heading {
+  font-family: 'Satisfy', cursive;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 10px 0;
+  color: #000;
+}
+
+.content_box .main_heading span {
+  display: block;
+  font-family: 'Heebo', Sans-Serif;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #d9af59;
+}
+
+.content_box .logo {
+  margin: 20px 0;
+  color: #d9af59;
+}
+
+.content_box .logo img {
+  width: 200px;
+  height: auto;
+}
+
+.content_box .sub {
+  display: block;
+}
+
+.content_box .sub_heading {
+  font-size: 60px;
+  line-height: 64px;
+  font-weight: 100;
+  color: #000;
+  font-family: 'Heebo', Sans-Serif;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: block;
+}
+
+.content_box .sub_text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #000;
+  font-family: 'Heebo', Sans-Serif;
+  width: 80%;
+  margin: 10px auto 10px auto;
+  display: block;
+}
+
+.content_box .button_wrapper .button {
+  background: #d9af59;
+  display: block;
+  width: 150px;
+  height: 55px;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Heebo', Sans-Serif;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  line-height: 55px;
+  margin: 0 auto;
+}
+
+.main_image {
+  background: url("images/office-tower.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  transform: translateX(60%);
+  top: 0;
+  width: 60%;
+}
