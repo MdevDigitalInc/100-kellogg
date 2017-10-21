@@ -26,8 +26,6 @@ body {
   background: #231f20;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
     
 }
 
@@ -185,4 +183,82 @@ body {
   transform: translateX(60%);
   top: 0;
   width: 60%;
+}
+
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  .shadow_box {
+    background: #231f20;
+    position: relative;
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+    transform: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    z-index: 5;
+  }
+  .content_wrapper {
+    height: 100vh;
+    top: 0;
+    transform: none;
+  }
+  .content_box::before{
+    display: none;
+  }
+  .content_box .sub_heading{
+    font-size: 52px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  
+  @keyframes slideIn {
+  0%{
+      transform: translateX(200%);
+  }
+  60%{
+      transform: translateX(200%);
+    }
+  100% {
+    transform: translateX(0%);
+  }
+}
+  
+  body{
+    background: #e0e0e0;
+  }
+  
+  .main, .shadow_box, .content_wrapper{
+    background: none;
+  }
+  
+  .main{
+    overflow: visible;
+  }
+  
+  .content_box {
+    width: 100vw;
+    transform: none;
+  }
+  
+  .content_box .sub {
+    display: none;
+  }
+  
+  .main_image {
+    position: relative;
+    top: auto;
+    width: 100vw;
+    transform: translateX(0%);
+  }
+  
+  .mobile {
+    display: inherit;
+  }
+  
 }
