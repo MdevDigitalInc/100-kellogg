@@ -42,6 +42,14 @@ table {
 	border-spacing: 0;
 }
 
+htm {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 @keyframes fadeIn {
   0%{opacity:0}
   30%{opacity:0}
@@ -188,7 +196,6 @@ body {
   color: #000;
   font-family: 'Heebo', Sans-Serif;
   text-transform: uppercase;
-  margin: 10px 0;
   display: block;
 }
 
@@ -228,6 +235,7 @@ body {
   transform: translateX(60%);
   top: 0;
   width: 60%;
+  overflow: hidden;
 }
 
 .mobile{
@@ -276,6 +284,7 @@ body {
   
   .main, .shadow_box, .content_wrapper{
     background: none;
+    overflow-x:hidden;
   }
   
   .main{
@@ -286,6 +295,10 @@ body {
     width: 100vw;
     height: 70vh;
     transform: none;
+  }
+  
+  .content_box .main_heading, .content_box .main_heading span{
+    font-size: 34px;
   }
   
   .content_box .sub {
