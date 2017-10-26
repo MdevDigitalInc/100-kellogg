@@ -192,13 +192,13 @@ body {
 }
 
 .content_box .sub_text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 24px;
   color: #e0e0e0;
   font-family: 'Heebo', Sans-Serif;
-  width: 80%;
-  margin: 10px auto 10px auto;
+  width: 75%;
+  margin: 10px auto 20px auto;
   display: block;
 }
 
