@@ -1,0 +1,38 @@
+body {
+  background: $white;
+}
+
+header {
+  padding: $kell-padding-md;
+  background: $kell-grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  a {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: $heading-weight;
+  }
+  
+  a:hover {
+    color: $kell-gold;
+  }
+  
+  .leasing-link {
+    color: $kell-gold;
+    border: 2px solid $kell-gold;
+    padding: 5px $kell-padding-sm;
+  }
+  
+  .leasing-link:hover {
+    color: $white;
+    border-color: $white;
+  }
+}

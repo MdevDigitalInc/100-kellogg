@@ -1,0 +1,362 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: $kell-blue;
+  
+  h1 {
+    font-size: 140px;
+    padding-bottom: $kell-padding-md;
+  }
+  
+  h5 {
+    font-family: $heading-font;
+    font-size: 100px;
+    font-weight: 400;
+  }
+}
+
+.attraction-tiles {
+  background: $kell-blue;
+  
+  .heading-wrapper {
+    
+    h6 {
+      font-family: $heading-font;
+      font-size: 48px;
+      line-height: 85px;
+      font-weight: 400;
+    }
+    
+    h2 {
+      font-size: 70px;
+    }
+  }
+  
+  .tile-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: $kell-padding-xl 0;
+    
+    .tile {
+      display: flex;
+      flex-direction: column;
+      background: $kell-gold;
+      flex-basis: 46vw;
+      height: 40vh;
+      margin-bottom: $kell-padding-lg;
+      padding: $kell-padding-md;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    
+    h4 {
+      text-transform: uppercase;
+      font-size: 60px;
+    }
+  }
+}
+
+.info-links {
+  background: $kell-gold;
+  display: flex;
+  align-items: center;
+  height: 30vh;
+  
+  .mdev-main-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    div {
+      width: 24vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-right: 1px solid $kell-grey;
+      
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.preview-tile-left {
+  padding-top: $kell-padding-xl;
+  padding-bottom: $kell-padding-lg;
+}
+
+.preview-tile-right {
+  padding-top: $kell-padding-lg;
+  padding-bottom: $kell-padding-xl;
+}
+
+.preview-tiles {
+  background: $kell-blue;
+  
+  .mdev-main-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+  
+.preview-tile-content {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $kell-padding-md;
+  background: #2d3440;
+    
+  .sub-text {
+    color: $kell-gold;
+    font-size: 30px;
+    font-weight: 800;
+  }
+    
+  h3 {
+    font-size: 80px;
+    font-weight: 300;
+    color: $kell-gold;
+    padding-bottom: $kell-padding-sm;
+  }
+    
+  p {
+    font-size: 20px;
+    line-height: 34px;
+  }
+    
+  .link-wrapper {
+    padding-top: $kell-padding-lg;
+  }
+      
+  a {
+    border: 3px solid $kell-gold;
+    padding: $kell-padding-sm $kell-padding-md;
+  }
+}
+  
+.preview-tile-image {
+  background: $kell-gold;
+  min-width: 50%;
+  flex-basis: 50%;
+  height: 80vh;
+}
+
+.impact {
+  background: $white;
+  padding: $kell-padding-xl 0;
+}
+
+.impact-header {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 80%;
+  margin: auto;
+  
+  div {
+    flex-basis: 50%;
+    
+    &:first-child {
+      padding-right: $kell-padding-md;
+    }
+  }
+  
+  h4 {
+    font-size: 55px;
+    font-weight: 800;
+  }
+  
+  .sub-title {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+  }
+  
+  p {
+    color: $kell-grey;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-weight: $body-weight;
+  }
+  
+  .link-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: $kell-padding-lg;
+  }
+  
+  a {
+    border: 3px solid $kell-gold;
+    color: $kell-grey;
+    padding: $kell-padding-sm $kell-padding-md;
+    font-size: 18px;
+    font-weight: 800;
+  }
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $kell-padding-xl 0;
+  
+  .testimonial {
+    flex-basis: 26%;
+    
+    p {
+      color: $kell-grey;
+    }
+  }
+  
+  .image {
+    background: $kell-gold;
+    height: 40vh;
+    width: 100%;
+    border-radius: 100%;
+    margin-bottom: $kell-padding-lg;
+  }
+  
+  .content {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    
+    .author {
+      font-size: 30px;
+      font-weight: 900;
+      color: $kell-blue;
+      padding-top: $kell-padding-md;
+    }
+    
+    .position {
+      font-size: 24px;
+      padding-top: $kell-padding-sm;
+    }
+  }
+}
+
+.phase-overview {
+  background: $kell-blue;
+}
+  
+.main-overview {
+  margin: auto;
+  width: 70vw;
+  
+  &:before {
+    content: '';
+    background: #2d3440;
+    min-width: 70vw;
+    margin: -7vh auto;
+    height: 7vh;
+    position: absolute;
+  }
+  
+  &:after {
+    content: '';
+    background: #2d3440;
+    min-width: 70vw;
+    margin: 0 auto;
+    height: 7vh;
+    position: absolute;
+  }
+  
+    
+  .phase-heading {
+    display: flex;
+    flex-direction: row;
+    padding: $kell-padding-xl $kell-padding-xl $kell-padding-lg;
+    background: #2d3440;
+  }
+    
+  .phase-title,
+  .phase-content {
+    padding: 0 $kell-padding-md;
+    flex-basis: 50%;
+  }
+    
+  h3 {
+    color: $kell-gold;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 48px;
+    text-align: right;
+  }
+    
+  p {
+    padding-bottom: $kell-padding-md;
+    font-weight: 300;
+    font-size: 18px;
+  }
+    
+  .sub-heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.filmstrip {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-directon: row;
+  z-index: 3;
+  
+  .image-tile {
+    background: $kell-gold;
+    width: 325px;
+    height: 325px;
+  }
+  
+  .image-tile:first-child,
+  .image-tile:last-child {
+    width: 19.4vw;
+    background: $kell-grey;
+  }
+}
+.overview-bottom-cta {
+  background: #2d3440;
+  padding: 365px $kell-padding-xl $kell-padding-sm;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70vw;
+  margin: auto;
+    
+  div {
+    padding: 0 $kell-padding-sm;
+  }
+    
+  .button-wrapper {
+    flex-basis: 25%;
+  }
+    
+  p {
+    font-size: 22px;
+    font-weight: 300;
+  }
+    
+  a {
+    border: 3px solid $kell-gold;
+    padding: $kell-padding-sm;
+    color: $white;
+  }
+}
+
+.logo-showcase {
+  background: $white;
+  padding: $kell-padding-xl 0;
+}
